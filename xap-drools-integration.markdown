@@ -582,10 +582,16 @@ Click on the Applications Tab and confirm the Web Services URL and PORT
 
 {%accord parent=acc0 |title=Step 17: Test the rules%}
 Open an Internet Browser and begin testing the Decision and Generic Data Lookup Services
+See all aplicants:
+http://localhost:8080/web-services/rest/com.gigaspaces.droolsintegration.model.facts.Applicant
+See Applicant with id 1
+http://localhost:8080/web-services/rest/com.gigaspaces.droolsintegration.model.facts.Applicant/1
+Process Application rule on applicant with id 1
+http://localhost:8080/web-services/rest/decision/processApplicationService/1
+Process Application rule on applicant with id 2
+http://localhost:8080/web-services/rest/decision/processApplicationService/2
 
-http://localhost:8080/web-services/mycompany/rest/com.mycompany.app.model.facts.Applicant/1
-http://localhost:8080/web-services/mycompany/rest/com.mycompany.app.model.facts.Applicant
-http://localhost:8080/web-services/mycompany/rest/decision/processApplicationService/1
+NOT WORKING YET:
 http://localhost:8080/web-services/mycompany/rest/decision/checkHolidayService/summer/july
 {%endaccord%}
 
